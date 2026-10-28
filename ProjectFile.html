@@ -1,0 +1,323 @@
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chandler Jarecki | Aerospace Engineering Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        slate900: '#0f172a',
+                        accentBlue: '#0284c7',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-accentBlue selection:text-white">
+
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="#hero" class="font-bold text-lg tracking-wider text-white">CJ<span class="text-sky-500">.</span></a>
+            <div class="hidden md:flex space-x-8 text-sm font-medium text-slate-400">
+                <a href="#about" class="hover:text-sky-400 transition">About</a>
+                <a href="#skills" class="hover:text-sky-400 transition">Skills</a>
+                <a href="#projects" class="hover:text-sky-400 transition">Projects</a>
+                <a href="#experience" class="hover:text-sky-400 transition">Experience</a>
+                <a href="#contact" class="hover:text-sky-400 transition">Contact</a>
+            </div>
+            <a href="mailto:chandlerjarecki@gmail.com" class="hidden md:inline-flex items-center gap-2 bg-sky-600 hover:bg-sky-500 text-white text-sm font-semibold px-4 py-2 rounded-lg transition shadow-lg shadow-sky-900/30">
+                <i class="fa-regular fa-envelope"></i> Get in Touch
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="min-h-screen flex items-center justify-center relative pt-20 px-6 overflow-hidden">
+        <!-- Background Glow Effect -->
+        <div class="absolute w-96 h-96 bg-sky-600/10 rounded-full blur-3xl -top-20 -left-20 pointer-events-none"></div>
+        <div class="absolute w-96 h-96 bg-indigo-600/10 rounded-full blur-3xl bottom-0 right-0 pointer-events-none"></div>
+
+        <div class="max-w-4xl mx-auto text-center z-10">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-900 border border-slate-800 text-sky-400 text-xs font-semibold mb-6">
+                <span class="w-2 h-2 rounded-full bg-sky-400 animate-pulse"></span> Sophomore Aerospace Engineering @ UW–Madison
+            </div>
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-white mb-6">
+                Hi, I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-indigo-400">Chandler Jarecki</span>
+            </h1>
+            <p class="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed">
+                Driven by complex problems that demand precision, disciplined execution, and creative thinking. Focused on turning rigorous engineering concepts into physical reality.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#projects" class="bg-sky-600 hover:bg-sky-500 text-white font-semibold px-6 py-3 rounded-xl transition shadow-lg shadow-sky-600/20">
+                    View My Projects
+                </a>
+                <a href="#contact" class="bg-slate-900 hover:bg-slate-800 text-slate-300 border border-slate-800 font-semibold px-6 py-3 rounded-xl transition">
+                    Contact Me
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About & Education Section -->
+    <section id="about" class="py-24 px-6 border-t border-slate-900">
+        <div class="max-w-6xl mx-auto">
+            <div class="mb-16">
+                <h2 class="text-2xl md:text-3xl font-bold text-white mb-3">Background & Education</h2>
+                <div class="w-12 h-1 bg-sky-500 rounded"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Bio Card -->
+                <div class="bg-slate-900/60 border border-slate-800/80 p-8 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-semibold text-white mb-4 flex items-center gap-2">
+                            <i class="fa-solid fa-user-astronaut text-sky-400"></i> Profile Overview
+                        </h3>
+                        <p class="text-slate-300 leading-relaxed mb-6">
+                            I approach engineering challenges with thorough analysis and careful attention to detail, staying committed to seeing projects through from concept to completion. Whether developing subsystem mechanics for robotics or designing structural load components, precision is my baseline.
+                        </p>
+                    </div>
+                    <div class="border-t border-slate-800 pt-4 flex items-center justify-between text-sm text-slate-400">
+                        <span>Mukwonago, WI</span>
+                        <span class="text-sky-400 font-medium">Open to Internships</span>
+                    </div>
+                </div>
+
+                <!-- Education Card -->
+                <div class="bg-slate-900/60 border border-slate-800/80 p-8 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-semibold text-white mb-4 flex items-center gap-2">
+                            <i class="fa-solid fa-graduation-cap text-sky-400"></i> University of Wisconsin-Madison
+                        </h3>
+                        <div class="mb-4">
+                            <p class="text-white font-medium">B.S. Aerospace Engineering</p>
+                            <p class="text-sm text-slate-400">Expected Graduation: May 2029 • Dean's List (3.68 GPA)</p>
+                        </div>
+                        <div class="mb-4">
+                            <p class="text-xs font-semibold text-sky-400 uppercase tracking-wider mb-2">Relevant Coursework</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-slate-800 text-slate-300 text-xs px-3 py-1 rounded-full">Linear Algebra & Diff. Eqs</span>
+                                <span class="bg-slate-800 text-slate-300 text-xs px-3 py-1 rounded-full">Physics</span>
+                                <span class="bg-slate-800 text-slate-300 text-xs px-3 py-1 rounded-full">Statics</span>
+                                <span class="bg-slate-800 text-slate-300 text-xs px-3 py-1 rounded-full">Geometric Modeling</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-t border-slate-800 pt-4 text-sm text-slate-400">
+                        <span>Extracurricular: <strong class="text-slate-200">Wisconsin Robotics</strong> (Competition Rover Arm Subsystem)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Skills Section -->
+    <section id="skills" class="py-24 px-6 border-t border-slate-900 bg-slate-950/50">
+        <div class="max-w-6xl mx-auto">
+            <div class="mb-16">
+                <h2 class="text-2xl md:text-3xl font-bold text-white mb-3">Technical Arsenal</h2>
+                <div class="w-12 h-1 bg-sky-500 rounded"></div>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Skill Group 1 -->
+                <div class="bg-slate-900/60 border border-slate-800 p-6 rounded-2xl">
+                    <div class="w-10 h-10 rounded-xl bg-sky-500/10 flex items-center justify-center text-sky-400 mb-4 text-lg">
+                        <i class="fa-solid fa-cube"></i>
+                    </div>
+                    <h3 class="font-semibold text-white mb-3">CAD Software</h3>
+                    <ul class="space-y-2 text-sm text-slate-400">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-sky-500 text-xs"></i> SolidWorks</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-sky-500 text-xs"></i> Fusion 360</li>
+                    </ul>
+                </div>
+
+                <!-- Skill Group 2 -->
+                <div class="bg-slate-900/60 border border-slate-800 p-6 rounded-2xl">
+                    <div class="w-10 h-10 rounded-xl bg-sky-500/10 flex items-center justify-center text-sky-400 mb-4 text-lg">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h3 class="font-semibold text-white mb-3">Analysis & Testing</h3>
+                    <ul class="space-y-2 text-sm text-slate-400">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-sky-500 text-xs"></i> Finite Element Analysis (FEA)</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-sky-500 text-xs"></i> Motion Studies</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-sky-500 text-xs"></i> Tolerance Analysis</li>
+                    </ul>
+                </div>
+
+                <!-- Skill Group 3 -->
+                <div class="bg-slate-900/60 border border-slate-800 p-6 rounded-2xl">
+                    <div class="w-10 h-10 rounded-xl bg-sky-500/10 flex items-center justify-center text-sky-400 mb-4 text-lg">
+                        <i class="fa-solid fa-gears"></i>
+                    </div>
+                    <h3 class="font-semibold text-white mb-3">Manufacturing</h3>
+                    <ul class="space-y-2 text-sm text-slate-400">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-sky-500 text-xs"></i> 3D Printing</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-sky-500 text-xs"></i> Laser Cutting</li>
+                    </ul>
+                </div>
+
+                <!-- Skill Group 4 -->
+                <div class="bg-slate-900/60 border border-slate-800 p-6 rounded-2xl">
+                    <div class="w-10 h-10 rounded-xl bg-sky-500/10 flex items-center justify-center text-sky-400 mb-4 text-lg">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <h3 class="font-semibold text-white mb-3">Programming & Software</h3>
+                    <ul class="space-y-2 text-sm text-slate-400">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-sky-500 text-xs"></i> Python</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-sky-500 text-xs"></i> Microsoft Excel, Word, PowerPoint</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-24 px-6 border-t border-slate-900">
+        <div class="max-w-6xl mx-auto">
+            <div class="mb-16">
+                <h2 class="text-2xl md:text-3xl font-bold text-white mb-3">Featured Projects</h2>
+                <div class="w-12 h-1 bg-sky-500 rounded"></div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-slate-900/60 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between hover:border-slate-700 transition">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-xs font-semibold text-sky-400 bg-sky-500/10 px-3 py-1 rounded-full">Jan 2026 – May 2026</span>
+                            <i class="fa-solid fa-scale-balanced text-slate-600 text-lg"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Miniature Crane</h3>
+                        <p class="text-sm text-slate-300 leading-relaxed mb-6">
+                            Drove mechanical design and SolidWorks development, utilizing motion studies to validate component movement and assembly functionality.
+                        </p>
+                        <ul class="space-y-2 text-xs text-slate-400 mb-6">
+                            <li class="flex items-start gap-2"><span class="text-sky-400 font-bold">•</span> Increased load capacity by <strong>40%</strong> via iterative motion validation.</li>
+                            <li class="flex items-start gap-2"><span class="text-sky-400 font-bold">•</span> Performed FEA and optimization, reducing chassis and lift mass by <strong>65%</strong>.</li>
+                            <li class="flex items-start gap-2"><span class="text-sky-400 font-bold">•</span> Applied dial calipers for precision dimensional tolerance analysis.</li>
+                        </ul>
+                    </div>
+                    <div class="pt-4 border-t border-slate-800 flex flex-wrap gap-2">
+                        <span class="text-[10px] bg-slate-800 text-slate-300 px-2.5 py-1 rounded">SolidWorks</span>
+                        <span class="text-[10px] bg-slate-800 text-slate-300 px-2.5 py-1 rounded">FEA</span>
+                        <span class="text-[10px] bg-slate-800 text-slate-300 px-2.5 py-1 rounded">Motion Studies</span>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="bg-slate-900/60 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between hover:border-slate-700 transition">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-xs font-semibold text-sky-400 bg-sky-500/10 px-3 py-1 rounded-full">Mar 2026 – May 2026</span>
+                            <i class="fa-solid fa-robot text-slate-600 text-lg"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Autonomous Environmental Service Robot</h3>
+                        <p class="text-sm text-slate-300 leading-relaxed mb-6">
+                            Collaborated on the conceptual design of an autonomous trash-collection robot, defining system requirements, sketches, and preliminary concepts.
+                        </p>
+                        <ul class="space-y-2 text-xs text-slate-400 mb-6">
+                            <li class="flex items-start gap-2"><span class="text-sky-400 font-bold">•</span> Created detailed SolidWorks part models, assemblies, drawings, and animations.</li>
+                            <li class="flex items-start gap-2"><span class="text-sky-400 font-bold">•</span> Maintained project documentation, design summaries, and formal proposals.</li>
+                        </ul>
+                    </div>
+                    <div class="pt-4 border-t border-slate-800 flex flex-wrap gap-2">
+                        <span class="text-[10px] bg-slate-800 text-slate-300 px-2.5 py-1 rounded">SolidWorks</span>
+                        <span class="text-[10px] bg-slate-800 text-slate-300 px-2.5 py-1 rounded">Prototyping</span>
+                        <span class="text-[10px] bg-slate-800 text-slate-300 px-2.5 py-1 rounded">Technical Docs</span>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="bg-slate-900/60 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between hover:border-slate-700 transition">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-xs font-semibold text-sky-400 bg-sky-500/10 px-3 py-1 rounded-full">Jan 2023</span>
+                            <i class="fa-solid fa-car text-slate-600 text-lg"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">CAD Vehicle Design & Testing</h3>
+                        <p class="text-sm text-slate-300 leading-relaxed mb-6">
+                            Researched and recreated the complex fluid geometry of the Oscar Mayer Wienermobile using advanced non-linear Fusion 360 features.
+                        </p>
+                        <ul class="space-y-2 text-xs text-slate-400 mb-6">
+                            <li class="flex items-start gap-2"><span class="text-sky-400 font-bold">•</span> Applied dimensional tolerances to build a race-ready vehicle structure.</li>
+                            <li class="flex items-start gap-2"><span class="text-sky-400 font-bold">•</span> Evaluated performance geometry through live timed trial testing.</li>
+                        </ul>
+                    </div>
+                    <div class="pt-4 border-t border-slate-800 flex flex-wrap gap-2">
+                        <span class="text-[10px] bg-slate-800 text-slate-300 px-2.5 py-1 rounded">Fusion 360</span>
+                        <span class="text-[10px] bg-slate-800 text-slate-300 px-2.5 py-1 rounded">Fluid Geometry</span>
+                        <span class="text-[10px] bg-slate-800 text-slate-300 px-2.5 py-1 rounded">Physical Testing</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-24 px-6 border-t border-slate-900 bg-slate-950/50">
+        <div class="max-w-4xl mx-auto">
+            <div class="mb-16">
+                <h2 class="text-2xl md:text-3xl font-bold text-white mb-3">Leadership & Experience</h2>
+                <div class="w-12 h-1 bg-sky-500 rounded"></div>
+            </div>
+
+            <div class="bg-slate-900/60 border border-slate-800 p-8 rounded-2xl relative">
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-4">
+                    <div>
+                        <h3 class="text-xl font-bold text-white">Lead Sailing Coach and Mentor</h3>
+                        <p class="text-sky-400 text-sm font-medium">Lake Beulah Sailing School</p>
+                    </div>
+                    <span class="text-xs font-semibold text-slate-400 bg-slate-800 px-3 py-1 rounded-full mt-2 sm:mt-0 w-fit">Jun 2023 – Present</span>
+                </div>
+                <ul class="space-y-3 text-sm text-slate-300 leading-relaxed">
+                    <li class="flex items-start gap-3">
+                        <i class="fa-solid fa-chevron-right text-sky-500 text-xs mt-1"></i>
+                        <span>Coordinate a team of sailing coaches, delegating responsibilities and collaborating on lesson planning to maintain consistent, high-impact instruction.</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="fa-solid fa-chevron-right text-sky-500 text-xs mt-1"></i>
+                        <span>Instruct youth and adult athletes in the <strong>aerodynamic principles of sailing</strong>, translating complex technical concepts into intuitive lessons and practical applications.</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="fa-solid fa-chevron-right text-sky-500 text-xs mt-1"></i>
+                        <span>Coach athletes at regional and national regattas, applying real-time analysis of wind conditions, boat performance, and race dynamics to develop quick decision-making skills.</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 px-6 border-t border-slate-900">
+        <div class="max-w-3xl mx-auto text-center">
+            <h2 class="text-3xl font-bold text-white mb-4">Let's Connect</h2>
+            <p class="text-slate-400 mb-8 max-w-lg mx-auto">
+                I'm actively looking for engineering internship and collaboration opportunities. Reach out via email or phone!
+            </p>
+            <div class="flex flex-wrap justify-center gap-4 text-sm">
+                <a href="mailto:chandlerjarecki@gmail.com" class="flex items-center gap-2 bg-slate-900 hover:bg-slate-800 border border-slate-800 text-slate-200 px-6 py-3 rounded-xl transition">
+                    <i class="fa-solid fa-envelope text-sky-400"></i> chandlerjarecki@gmail.com
+                </a>
+                <a href="tel:4148829445" class="flex items-center gap-2 bg-slate-900 hover:bg-slate-800 border border-slate-800 text-slate-200 px-6 py-3 rounded-xl transition">
+                    <i class="fa-solid fa-phone text-sky-400"></i> 414-882-9445
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-slate-900 text-center text-xs text-slate-500">
+        <p>© 2026 Chandler Jarecki. Built with precision and code.</p>
+    </footer>
+
+</body>
+</html>
